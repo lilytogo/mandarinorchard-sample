@@ -1,9 +1,10 @@
+/* 大枠ボックス */
 .mandarin3{
-
+  
   width: 40%;
  object-fit: cover;
-
 }
+
 .contents {
      width: 100%;
      max-width: 1200px;
@@ -19,8 +20,8 @@
      display: flex;
  }
  .box1 {
-     width: 20%;
-     margin-top: 250px;
+     width: 55%;
+     margin: auto;
  }
  .box2 {
      width: 45%;

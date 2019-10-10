@@ -1,19 +1,45 @@
-
-
-.pls{
-  font-size: 20px;
-}
-p{
-  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
-}
-
 .mandarin2{
+  
   width: 40%;
  object-fit: cover;
+
 }
-.container{
+.contents {
+     width: 100%;
+     max-width: 1200px;
+     margin: auto;
+ }
+ .contents img {
+     width: 100%;
+ }
+ .text-center {
+     text-align: center;
+ }
+ .flexbox {
+     display: flex;
+ }
+ .box1 {
+     width: 20%;
+     margin-top: 250px;
+ }
+ .box2 {
+     width: 45%;
+     margin: auto .5rem;
+
+  border: solid 3px #black;
+ }
+ p{
+   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+ }
+ h1{
+   margin-left: 150px;
+ }
+ h3{
+   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+ }
+ .container{
   float:left;
-  margin-left: 150px;
+  margin-left: 140px;
   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
   text-align: center;
   padding-top: 40px;
@@ -37,3 +63,17 @@ p{
   border-color: #808080;
   color: #FFF;
 }
+
+ @media screen and (max-width: 767px) {
+     .flexbox {
+         display: block;
+     }
+     .flexbox .box1 {
+         width: 100%;
+         margin: 0 auto;
+     }
+     .flexbox .box2 {
+         width: 100%;
+         margin: 0 auto;
+     }
+ }
