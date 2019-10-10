@@ -1,7 +1,6 @@
 body{
   background-color: #fffafa
 }
-
 .layer{
   display: flex;
   justify-content: center;
@@ -19,14 +18,16 @@ body{
 
 /* 重ねる文字の基本設定 */
 .layer-txt{
-
+margin-left: 40px;
+margin-top: 230px;
 font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
 text-align: center;
 padding-top: 40px;
 }
 
 .layer-txt2{
-
+margin-left: 40px;
+margin-top: 230px;
 font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
 text-align: center;
 padding-top: 40px;
@@ -68,12 +69,11 @@ padding-top: 40px;
 @media screen and (min-width: 601px) {
   .layer-txt{
     font-size: 2rem;
-    margin-left: 40px;
-    margin-top: 230px;;
+    padding-left: 130px;
   }
   .layer-txt2{
     font-size: 2rem;
-    margin-left: 40px;
-    margin-top: 230px;
+    padding-top: 8rem 0;
+
   }
 }
