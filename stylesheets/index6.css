@@ -1,19 +1,5 @@
-@charset "utf-8";
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
-
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
-}
-
-
-
-input {
-  border: none;
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5em;
-  padding: 0;
-  -webkit-appearance: none;
+body{
+  background-color: #fffafa
 }
 .pls{
 	text-align: center;
@@ -25,73 +11,8 @@ p {
   line-height: 1.5em;
 }
 
-after { clear: both; }
 
-#login {
-  margin-top: 50px;
-  width: 320px;
 
-}
-
-#login form {
-  margin: auto;
-  padding: 22px 22px 22px 22px;
-  width: 100%;
-	height: 500px;
-  border-radius: 5px;
-  background: #ffffff;
-
-}
-
-#login form span {
-  background-color: #ffffff;
-  border-radius: 3px 0px 0px 3px;
-  border-right: 1px solid #000000;
-  color: #000000;
-  display: block;
-  float: left;
-  line-height: 50px;
-  text-align: center;
-  width: 50px;
-  height: 50px;
-}
-
-#login form input[type="text"] {
-  background-color: #ffffff;
-  border-radius: 0px 3px 3px 0px;
-  color: #000000;
-  margin-bottom: 1em;
-  padding: 0 16px;
-  width: 235px;
-  height: 50px;
-}
-
-#login form input[type="password"] {
-  background-color: #3b4148;
-  border-radius: 0px 3px 3px 0px;
-  color: #a9a9a9;
-  margin-bottom: 1em;
-  padding: 0 16px;
-  width: 235px;
-  height: 50px;
-}
-.submit {
-  background: #b5cd60;
-  border: 0;
-  width: 100%;
-  height: 40px;
-  border-radius: 3px;
-  color: white;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
-}
-#login form input[type="submit"]:hover {
-  background: #16aa56;
-}
-.checkin{
-	margin-top: 40px;
-	margin-left: 100px;
-}
 .btn-border {
 	font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
    display: inline-block;
@@ -112,7 +33,7 @@ after { clear: both; }
    border-color: #000000;
    color: #FFF;
  }
- .mandarin5{
+ .mandarin{
 
 
  object-fit: cover;
@@ -143,6 +64,7 @@ after { clear: both; }
 
   border: solid 3px #black;
  }
+
  @media screen and (max-width: 767px) {
     .flexbox {
         display: block;
@@ -157,11 +79,6 @@ after { clear: both; }
       }
   }
 
-	.mandrin5{
-
-		width: 70px;
-		object-fit: cover;
-	}
 
   @media screen and (min-width: 601px) {
     .flexbox {
