@@ -1,67 +1,97 @@
 body{
   background-color: #fffafa
 }
-.layer{
-  display: flex;
-  justify-content: center;
-
-  text-align: center;
-  margin: 0 auto;
+.pls{
+	text-align: center;
+	font-size: 10px;
+	font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+}
+p {
+	font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+  line-height: 1.5em;
 }
 
-/* 背景画像の読み込み */
-.layer-bg{
-  background: url("../images/mandarin.jpg") no-repeat 0 0;
-  background-size: 100%;
-}
-
-/* 重ねる文字の基本設定 */
-.checkin{
-  margin-top: 200px;
-  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
 
 
-
-
-
-
-}
 .btn-border {
-  display: inline-block;
-  max-width: 180px;
-  text-align: left;
-  border: 1px solid #000000;
-  font-size: 16px;
-  color: #000000;
-  text-decoration: none;
-  font-weight: normal;
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: .4s;
+	font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+   display: inline-block;
+   max-width: 180px;
+   text-align: left;
+   border: 1px solid #000000;
+   font-size: 16px;
+   color: #000000;
+   text-decoration: none;
+   font-weight: normal;
+   padding: 8px 16px;
+   border-radius: 4px;
+   transition: .4s;
+ }
+
+ .btn-border:hover {
+   background-color: #000000;
+   border-color: #000000;
+   color: #FFF;
+ }
+ .mandarin{
+
+
+ object-fit: cover;
+
 }
+.contents {
+     width: 100%;
+     max-width: 1200px;
+     margin: auto;
+ }
+ .contents img {
+     width: 100%;
+ }
+ .text-center {
+	 font-size: 15px;
+     text-align: center;
+ }
+ .flexbox {
+     display: flex;
+ }
+ .box1 {
+     width: 20%;
+     margin-top: 250px;
+ }
+ .box2 {
+     width: 45%;
+     margin: auto .5rem;
 
-.btn-border:hover {
-  background-color: #000000;
-  border-color: #000000;
-  color: #FFF;
-}
+  border: solid 3px #black;
+ }
 
-
-/* SP向けの設定 */
-@media screen and (max-width: 600px) {
-  .checkin{
-    text-align: center;
+ @media screen and (max-width: 767px) {
+    .flexbox {
+        display: block;
+    }
+      .flexbox .box1 {
+          width: 50%;
+          margin: 0 auto;
+      }
+      .flexbox .box2 {
+          width: 100%;
+          margin: 0 auto;
+      }
   }
 
 
+  @media screen and (min-width: 601px) {
+    .flexbox {
+        display: block;
+    }
+      .flexbox .box1 {
+          width: 50%;
+          margin: 0 auto;
+      }
+      .flexbox .box2 {
+          width: 50%;
+          margin: 0 auto;
+      }
 
-    
-}
-
-/* PC向けの設定 */
-@media screen and (min-width: 601px) {
-  .layer-txt{
-    font-size: 2rem;
-    padding: 8rem 0;
+			}
   }
-}
