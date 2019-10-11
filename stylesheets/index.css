@@ -1,37 +1,30 @@
 body{
   background-color: #fffafa
 }
-.layer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-}
+
+
 
 /* 背景画像の読み込み */
 .layer-bg{
   background: url("../images/mandarin.jpg") no-repeat 0 0;
   background-size: 100%;
-
 }
 
 /* 重ねる文字の基本設定 */
 .layer-txt{
-margin-left: 40px;
-margin-top: 230px;
-font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
-text-align: center;
-padding-top: 40px;
+
+  color: #fff;
+
+  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+}
+.layer-txt2{
+
+    color: #fff;
+
+    font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+
 }
 
-.layer-txt2{
-margin-left: 40px;
-margin-top: 230px;
-font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
-text-align: center;
-padding-top: 40px;
-}
 .btn-border {
   display: inline-block;
   max-width: 180px;
@@ -51,29 +44,18 @@ padding-top: 40px;
   border-color: #808080;
   color: #FFF;
 }
-
-
-/* 重ねる文字の基本設定 */
-.
 /* SP向けの設定 */
 @media screen and (max-width: 600px) {
   .layer-txt{
-   font-size: 1rem;
+   font-size: 1.4rem;
    padding: 4rem 0;
   }
-
 }
-
 
 /* PC向けの設定 */
 @media screen and (min-width: 601px) {
   .layer-txt{
     font-size: 2rem;
-    padding-left: 130px;
-  }
-  .layer-txt2{
-    font-size: 2rem;
-    padding-top: 8rem 0;
-
+    padding: 8rem 0;
   }
 }
