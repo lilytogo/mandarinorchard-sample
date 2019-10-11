@@ -4,7 +4,7 @@ body{
 .layer{
   display: flex;
   justify-content: center;
-  align-items: center;
+
   text-align: center;
   margin: 0 auto;
 }
@@ -16,8 +16,15 @@ body{
 }
 
 /* 重ねる文字の基本設定 */
-.layer-txt{
+.checkin{
   margin-top: 200px;
+  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+
+
+
+}
+.itinery{
+
   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
 
 
@@ -46,10 +53,15 @@ body{
 
 /* SP向けの設定 */
 @media screen and (max-width: 600px) {
-  .layer-txt{
-   font-size: 1.4rem;
-   padding: 4rem 0;
+  .checkin{
+    text-align: center;
   }
+
+.itinery{
+  display: inline-block;
+    margin-left: 25px;
+
+    }
 }
 
 /* PC向けの設定 */
