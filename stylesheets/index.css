@@ -1,8 +1,13 @@
 body{
   background-color: #fffafa
 }
-
-
+.layer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
 
 /* 背景画像の読み込み */
 .layer-bg{
@@ -12,19 +17,12 @@ body{
 
 /* 重ねる文字の基本設定 */
 .layer-txt{
-
-  color: #fff;
-
+  margin-top: 200px;
   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
-}
-.layer-txt2{
 
-    color: #fff;
 
-    font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
 
 }
-
 .btn-border {
   display: inline-block;
   max-width: 180px;
@@ -44,6 +42,8 @@ body{
   border-color: #808080;
   color: #FFF;
 }
+
+
 /* SP向けの設定 */
 @media screen and (max-width: 600px) {
   .layer-txt{
