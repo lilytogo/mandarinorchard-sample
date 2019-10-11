@@ -41,7 +41,9 @@
  }
 
  @media screen and (max-width: 767px) {
-
+   .flexbox {
+       display: block;
+   }
      .flexbox .box1 {
          width: 50%;
          margin: 0 auto;
@@ -52,13 +54,15 @@
      }
  }
  @media screen and (min-width: 601px) {
-
+   .flexbox {
+       display: block;
+   }
      .flexbox .box1 {
-         width: 100%;
+         width: 50%;
          margin: 0 auto;
      }
      .flexbox .box2 {
-         width: 100%;
+         width: 50%;
          margin: 0 auto;
      }
  }
