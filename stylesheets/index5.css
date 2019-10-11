@@ -44,10 +44,10 @@
  .btn-border-bottom {
   position: relative;
   display: inline-block;
-  font-weight: bold;
+  font-weight: normal;
   padding: 0.25em 0;
   text-decoration: none;
-  color: #67c5ff;
+  color: #000000;
 }
 
 .btn-border-bottom:before {
@@ -57,8 +57,8 @@
   height: 4px;
   top:100%;
   left: 0;
-  border-radius: 3px;
-  background:#67c5ff;
+  border-radius: 0.2px;
+  background:#000000;
   transition: .2s;
 }
 
