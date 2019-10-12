@@ -1,13 +1,7 @@
-/* 大枠ボックス */
-
 .mandarin3{
 
   width: 55%;
  object-fit: cover;
-}
-.note{
-  width: 40px;
-  
 }
 header {
   padding:10px;
