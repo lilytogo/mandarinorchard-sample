@@ -1,4 +1,6 @@
-
+body{
+  background-color: #fffafa
+}
 .pls{
 	text-align: center;
 	font-size: 10px;
@@ -69,8 +71,7 @@ margin-left: 70px;
  }
 
  .box2 {
-
-
+    text-align: center;
 
   border: solid 3px #black;
  }
@@ -85,7 +86,7 @@ margin-left: 70px;
       }
       .flexbox .box2 {
           width: 100%;
-          
+
       }
 }
 
@@ -98,7 +99,8 @@ margin-left: 70px;
           margin: 0 auto;
       }
       .flexbox .box2 {
-          width: 50%;
+
+          width: 500px;
         margin: 0 auto;
         }
       }
