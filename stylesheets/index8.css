@@ -1,0 +1,137 @@
+.mandarin3{
+
+  width: 55%;
+ object-fit: cover;
+}
+
+.contents {
+     width: 100%;
+     max-width: 1200px;
+     margin: auto;
+ }
+ .contents img {
+     width: 100%;
+ }
+ .text-center {
+     text-align: center;
+ }
+ .flexbox {
+     display: flex;
+ }
+ .box1 {
+     width: 55%;
+     margin: auto;
+ }
+ .box2 {
+     width: 45%;
+     margin: auto .5rem;
+
+  border: solid 3px #black;
+ }
+ p{
+   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+ }
+ h1{
+   text-align: center;
+   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+
+ }
+ h3{
+   text-align: center;
+   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+ }
+ .btn-border-bottom {
+  position: relative;
+  display: inline-block;
+  font-weight: normal;
+  padding: 0.25em 0;
+  text-decoration: none;
+  color: #000000;
+}
+
+.btn-border-bottom:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  top:100%;
+  left: 0;
+  border-radius: 0.2px;
+  background:#000000;
+  transition: .2s;
+}
+
+.btn-border-bottom:hover:before {
+  top: -webkit-calc(100% - 3px);
+  top: calc(100% - 3px);
+}
+
+.btn-partial-line:hover {
+  padding-left: 0.7em;
+  padding-right: 0.3em;
+}
+.botton{
+  text-align: center;
+}
+.btn-border {
+	font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+   display: inline-block;
+   max-width: 250px;
+margin-left: 140px;
+   border: 1px solid #000000;
+   font-size: 16px;
+   color: #000000;
+   text-decoration: none;
+   font-weight: normal;
+   padding: 8px 16px;
+   border-radius: 4px;
+   transition: .4s;
+ }
+
+ .btn-border:hover {
+   background-color: #000000;
+   border-color: #000000;
+   color: #FFF;
+ }
+ .review1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: normal;
+    color: #000000;/*文字色*/
+    background: #FFF;
+    border: solid 2px #000000;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.review1 p {
+    margin: 0;
+    padding: 0;
+}
+ @media screen and (max-width: 767px) {
+     .flexbox {
+         display: block;
+     }
+     .flexbox .box1 {
+         width: 100%;
+         margin: 0 auto;
+     }
+     .flexbox .box2 {
+         width: 100%;
+         margin: 0 auto;
+     }
+ }
+ @media screen and (min-width: 601px) {
+     .flexbox {
+         display: block;
+     }
+     .flexbox .box1 {
+         width: 100%;
+         margin: 0 auto;
+     }
+     .flexbox .box2 {
+         width: 100%;
+         margin: 0 auto;
+     }
+     .flexbox .btn-border{
+       margin-left: 45%;
+     }
+ }

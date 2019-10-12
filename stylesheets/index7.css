@@ -1,0 +1,221 @@
+/* 大枠ボックス */
+
+.mandarin3{
+
+  width: 55%;
+ object-fit: cover;
+}
+header {
+  padding:10px;
+  background: #ffffff;
+}
+
+#nav-drawer {
+  position: relative;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーの形をCSSで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 1px;/*線の太さ*/
+  width: 25px;/*長さ*/
+  border-radius: 3px;
+  background: #000000;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒箇所*/
+#nav-close {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*メニューの中身*/
+#nav-content {
+  font-size: 10px;
+  text-decoration: none;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 90%;
+  max-width: 330px;/*最大幅（お好みで調整を）*/
+  height: 100%;
+  background: #fff;
+  transition: .3s ease-in-out;
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);
+}
+
+/*チェックがついたら表示させる*/
+#nav-input:checked ~ #nav-close {
+  display: block;
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+.header-logo-menu{
+	display: flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	flex-direction: row;
+	-moz-flex-direction: row;
+	-o-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+}
+.contents {
+     width: 100%;
+     max-width: 1200px;
+     margin: auto;
+ }
+ .contents img {
+     width: 100%;
+ }
+ .text-center {
+     text-align: center;
+ }
+ .flexbox {
+     display: flex;
+ }
+ .box1 {
+     width: 55%;
+     margin: auto;
+ }
+ .box2 {
+     width: 45%;
+     margin: auto .5rem;
+
+  border: solid 3px #black;
+ }
+ p{
+   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+ }
+ h1{
+   text-align: center;
+   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+
+ }
+ h3{
+   text-align: center;
+   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+ }
+ .btn-border-bottom {
+  position: relative;
+  display: inline-block;
+  font-weight: normal;
+  padding: 0.25em 0;
+  text-decoration: none;
+  color: #000000;
+}
+
+.btn-border-bottom:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  top:100%;
+  left: 0;
+  border-radius: 0.2px;
+  background:#000000;
+  transition: .2s;
+}
+
+.btn-border-bottom:hover:before {
+  top: -webkit-calc(100% - 3px);
+  top: calc(100% - 3px);
+}
+
+.btn-partial-line:hover {
+  padding-left: 0.7em;
+  padding-right: 0.3em;
+}
+.botton{
+  text-align: center;
+}
+.btn-border {
+	font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+   display: inline-block;
+   max-width: 250px;
+margin-left: 140px;
+   border: 1px solid #000000;
+   font-size: 16px;
+   color: #000000;
+   text-decoration: none;
+   font-weight: normal;
+   padding: 8px 16px;
+   border-radius: 4px;
+   transition: .4s;
+ }
+
+ .btn-border:hover {
+   background-color: #000000;
+   border-color: #000000;
+   color: #FFF;
+ }
+ @media screen and (max-width: 767px) {
+     .flexbox {
+         display: block;
+     }
+     .flexbox .box1 {
+         width: 100%;
+         margin: 0 auto;
+     }
+     .flexbox .box2 {
+         width: 100%;
+         margin: 0 auto;
+     }
+ }
+ @media screen and (min-width: 601px) {
+     .flexbox {
+         display: block;
+     }
+     .flexbox .box1 {
+         width: 100%;
+         margin: 0 auto;
+     }
+     .flexbox .box2 {
+         width: 100%;
+         margin: 0 auto;
+     }
+     .flexbox .btn-border{
+       margin-left: 45%;
+     }
+ }
