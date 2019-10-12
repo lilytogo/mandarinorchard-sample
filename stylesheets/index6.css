@@ -1,6 +1,4 @@
-body{
-  background-color: #fffafa
-}
+
 .pls{
 	text-align: center;
 	font-size: 10px;
@@ -53,12 +51,7 @@ margin-left: 70px;
     border-color: #000000;
     color: #FFF;
   }
- .mandarin{
 
-
- object-fit: cover;
-
-}
 .contents {
      width: 100%;
      max-width: 1200px;
@@ -76,7 +69,7 @@ margin-left: 70px;
  }
 
  .box2 {
-     width: 40%;
+
 
 
   border: solid 3px #black;
@@ -92,7 +85,7 @@ margin-left: 70px;
       }
       .flexbox .box2 {
           width: 100%;
-          margin-left: 70px;
+          
       }
 }
 
@@ -105,49 +98,7 @@ margin-left: 70px;
           margin: 0 auto;
       }
       .flexbox .box2 {
-          width: 100%;
-          margin-left: 280px;
+          width: 50%;
+        margin: 0 auto;
+        }
       }
-      .btn-border {
-      	font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
-         display: inline-block;
-         max-width: 300px;
-      margin-left: 70px;
-         border: 1px solid #000000;
-         font-size: 50px;
-         color: #000000;
-         text-decoration: none;
-         font-weight: normal;
-         padding: 8px 16px;
-         border-radius: 4px;
-         transition: .4s;
-       }
-
-       .btn-border:hover {
-         background-color: #000000;
-         border-color: #000000;
-         color: #FFF;
-       }
-      .btn-border2 {
-      	font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
-
-         display: inline-block;
-         max-width: 300px;
-         border: 1px solid #000000;
-         font-size: 50px;
-         color: #000000;
-         text-decoration: none;
-         font-weight: normal;
-         padding: 8px 16px;
-         border-radius: 4px;
-         transition: .4s;
-       }
-
-       .btn-border2:hover {
-         background-color: #000000;
-         border-color: #000000;
-         color: #FFF;
-       }
-
-
-  }
