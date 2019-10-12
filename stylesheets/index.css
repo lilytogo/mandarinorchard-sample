@@ -117,20 +117,18 @@ after { clear: both; }
      text-align: center;
  }
  .flexbox {
-     display: block;
+     display: flex;
  }
  .box1 {
      width: 20%;
      margin-top: 250px;
  }
  .box2 {
-     width: 70%;
+     width: 45%;
+     margin: auto .5rem;
 
-
-
+  border: solid 3px #black;
  }
-
-
  @media screen and (max-width: 767px) {
     .flexbox {
         display: block;
@@ -140,12 +138,16 @@ after { clear: both; }
           margin: 0 auto;
       }
       .flexbox .box2 {
-          width: 0%;
-          padding-right: 50px;
+          width: 100%;
+          margin: 0 auto;
       }
   }
 
+	.mandrin5{
 
+		width: 70px;
+		object-fit: cover;
+	}
 
   @media screen and (min-width: 601px) {
     .flexbox {
@@ -156,9 +158,9 @@ after { clear: both; }
           margin: 0 auto;
       }
       .flexbox .box2 {
-          width: 70%;
-          margin-left: 30px;
+          width: 50%;
+          margin: 0 auto;
       }
 
-
+			}
   }
