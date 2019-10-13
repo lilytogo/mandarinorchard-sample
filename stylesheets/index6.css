@@ -54,22 +54,34 @@ margin-left: 70px;
     color: #FFF;
   }
 
-.contents {
-     width: 100%;
-     max-width: 1200px;
-     margin: auto;
- }
- .contents img {
-     width: 100%;
- }
+
  .text-center {
+
 	 font-size: 15px;
      text-align: center;
  }
  .flexbox {
      display: flex;
  }
+ .contents{
+   position: relative;
+   }
 
+ .contents p {
+   position: absolute;
+   top: 80%;
+   left: 50%;
+   -ms-transform: translate(-50%,-50%);
+   -webkit-transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%);
+   margin:0;
+   padding:0;
+   /*文字の装飾は省略*/
+   }
+
+ .contents img {
+   width: 100%;
+   }
  .box2 {
     text-align: center;
 
