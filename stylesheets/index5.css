@@ -5,6 +5,7 @@
  object-fit: cover;
 }
 
+
 nav{
 text-align: center;
 }
@@ -12,22 +13,66 @@ nav ul{
 margin: 0 ;
 padding: 0 ;
 }
-nav ul li{
+nav li{
 list-style: none;
 display: inline-block;
-width: 18%;
+width: 10%;
 min-width: 90px;
 }
-nav ul li a{
+nav li:not(:last-child){
+border-right:2px solid #ddd;
+}
+nav a{
 text-decoration: none;
 color: #333;
 }
-nav ul li.current a{
-color: #F33135;
+nav a.current{
+color: #00B0F0;
+border-bottom:2px solid #00B0F0;
 }
-nav ul li a:hover{
-color: #E7DA66;
+nav a:hover{
+color:#F7CB4D;
+border-bottom:2px solid #F7CB4D;
 }
+dl.search{
+    position:relative;
+    background-color:#fff;
+    border:1px solid #aaa;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -o-border-radius:6px;
+    -ms-border-radius:6px;
+    border-radius:6px;
+}
+dl.search dt{
+    margin-right:40px;
+    padding:8px 0 8px 8px;
+}
+dl.search dt input{
+    width:100%;
+    height:24px;
+    line-height:24px;
+    background:none;
+    border:none;
+}
+dl.search dd{
+    position:absolute;
+    top:0;
+    right:0;
+}
+dl.search dd button{
+    display:block;
+    padding:10px;
+    background:none;
+    border:none;
+}
+dl.search dd button span{
+    display:block;
+    width:20px;
+    height:20px;
+    background:url("images/search.png") no-repeat scroll 0 0;
+}
+
 .contents {
      width: 100%;
      max-width: 1200px;
@@ -64,7 +109,9 @@ color: #E7DA66;
    text-align: center;
    font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
  }
+
  .btn-border-bottom {
+   text-align: center;
   position: relative;
   display: inline-block;
   font-weight: normal;
