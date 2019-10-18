@@ -138,7 +138,11 @@ dl.search dd button span{
    text-align: center;
    font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
  }
-
+.send{
+ color: black;
+  text-decoration: underline;
+  text-align: center;
+}
  .btn-border-bottom {
    text-align: center;
   position: relative;
