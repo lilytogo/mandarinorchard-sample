@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title></title>
+
+  <link rel="stylesheet" href="./stylesheets/index7.css">
+  <script type="text/javascript" language="javascript">
+
+
+  function total() {
+  yen = 0;
+  for (i=0; i< document.A_Form.length-1; i++) {
+  if (document.A_Form.elements[i].checked) {
+  yen += eval(document.A_Form.elements[i].value);
+  }
+  }
+  document.A_Form._total.value = yen;
+  }
+  </script>
+
+
+<script type="text/javascript" language="javascript">
+    function onRadioButtonChange() {
+      check1 = document.form1.Radio1.checked;
+      check2 = document.form1.Radio2.checked;
+      check3 = document.form1.Radio3.checked;
+
+      target = document.getElementById("output");
+
+      if (check1 == true) {
+        target.innerHTML = " <br>Total Budget: $20 <br/>";
+      }
+      else if (check2 == true) {
+        target.innerHTML = "<br>Total Budget: $26　<br/>";
+      }
+      else if (check3 == true) {
+        target.innerHTML = "<br>Total Budget: $30　<br/>";
+      }
+    }
+  </script>
+</head>
+
+<body>
+    <image src="images/mandarin8.jpg" class="mandarin3">
+  <div class="contents">
+     <div class="flexbox">
+         <div class="box1">
+           <p class="text-center">Calculate the  budget</p>
+  <section id="badget">
+    <div class="contents">
+       <div class="flexbox">
+           <div class="box1">
+
+
+
+<p class="budgetp">Transportation Fee</p>
+
+<form name="form1" action="">
+  <input id="Radio1" name="RadioGroup1" type="radio" onchange="onRadioButtonChange();" /><label for="Radio1">day1 ($20)</label><br/>
+  <input id="Radio2" name="RadioGroup1" type="radio" onchange="onRadioButtonChange();" /><label for="Radio2">day2 ($26)</label><br />
+  <input id="Radio3" name="RadioGroup1" type="radio" onchange="onRadioButtonChange();" /><label for="Radio3">day3 ($30)</label><br />
+</form>
+
+  <div id="output"><p>Total Budget: $</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class=itenarybadget>
+  <p class="budgetp">Itinery Budget</p>
+
+  <form name="A_Form">
+<input type="checkbox" name="商品Ａ" value="10" onclick="total()"><a href="index7.html" > Little India（<font color="black">$10</font>）</a><br>
+<input type="checkbox" name="商品Ｂ" value="13" onclick="total()"><a href="chinatown.html" > Chinatown（<font color="black">$13</font>）</a><br>
+<input type="checkbox" name="商品Ｃ" value="20" onclick="total()"><a href="art.html" > Art Science Museum（<font color="black">$20</font>）</a><br>
+<input type="checkbox" name="商品Ｄ" value="22" onclick="total()"><a href="peranakan.html" > Peranakan Museum（<font color="black">$22</font>）</a><br>
+<input type="checkbox" name="商品E" value="22" onclick="total()"><a href="Sultan.html" >Majid Sultan（<font color="black">$22</font>）</a><br>
+<input type="checkbox" name="商品F" value="22" onclick="total()"><a href="holland.html" >Holland Village（<font color="black">$22</font>）</a><br><br>
+<div class="devidenature">
+
+
+<input type="checkbox" name="商品G" value="10" onclick="total()"><a href="gardenbythebay.html" >Garden by the Bay（<font color="black">$10</font>）</a><br>
+<input type="checkbox" name="商品H" value="13" onclick="total()"><a href="index18.html" >Tree Top Walk（<font color="black">$13</font>）</a><br>
+<input type="checkbox" name="商品I" value="20" onclick="total()"><a href="bukit.html" >Bukit Timah Nature Reserve（<font color="black">$20</font>）</a><br>
+<input type="checkbox" name="商品J" value="22" onclick="total()"><a href="wisdor.html" >Windsor Nature Park（<font color="black">$22</font>）</a><br>
+<input type="checkbox" name="商品K" value="10" onclick="total()"><a href="central.html" >Central Catchment Nature Reserve（<font color="black">$10</font>）</a><br>
+<input type="checkbox" name="商品L" value="10" onclick="total()"><a href="fortcanningpark.html" >Fort Canning Park（<font color="black">$10</font>）</a><br>
+</div>
+<div class="devidenature">
+  <p class="budgetp">Food Budget</p>
+<input type="checkbox" name="商品M" value="10" onclick="total()"><a href="chatterbox.html" >Chatterbox（<font color="black">$10</font>）</a><br>
+<input type="checkbox" name="商品N" value="13" onclick="total()"><a href="nasi.html" >Selera Rasa Nasi Lemak（<font color="black">$13</font>）</a><br>
+<input type="checkbox" name="商品O" value="20" onclick="total()"><a href="fried.html" >Outram Park Fried Kway  Teow Mee（<font color="black">$20</font>）</a><br>
+<input type="checkbox" name="商品P" value="22" onclick="total()"><a href="feifei.html" >Fei Fei Wanton Mee（<font color="black">$22</font>）</a><br>
+<input type="checkbox" name="商品Q" value="10" onclick="total()"><a href="index17.html" >SONG FA Bak Kut Teh（<font color="black">$10</font>）</a><br>
+<input type="checkbox" name="商品R" value="10" onclick="total()"><a href="redhouse.html" >Red House（<font color="black">$10</font>）</a><br>
+  </div>
+
+<div class="devidenature">
+ <p class="budgetp">Drinking Budget</p>
+<input type="checkbox" name="商品S" value="10" onclick="total()"><a href="index10.html" >Bar on 5（<font color="black">$10</font>）</a><br>
+<input type="checkbox" name="商品T" value="13" onclick="total()"><a href="crazyelephant.html" >Crazy Elephant（<font color="black">$13</font>）</a><br>
+<input type="checkbox" name="商品U" value="20" onclick="total()"><a href="cubalibre.html" >Cuba Libre（<font color="black">$20</font>）</a><br>
+<input type="checkbox" name="商品V" value="22" onclick="total()"><a href="barrouge.html" >Bar Rouge（<font color="black">$22</font>）</a><br>
+<input type="checkbox" name="商品W" value="10" onclick="total()"><a href="emerald.html" >No5. Emerald Hill（<font color="black">$10</font>）</a><br>
+<input type="checkbox" name="商品X" value="10" onclick="total()"><a href="celavi.html" >Ce La Vi（<font color="black">$10</font>）</a><br>
+</div>
+<p class="total">Total Budget：$<input type="text" name="_total" size="10"><input type="reset" value="clear"></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>

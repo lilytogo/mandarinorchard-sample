@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title></title>
+
+  <link rel="stylesheet" href="./stylesheets/index7.css">
+  <script type="text/javascript" language="javascript">
+
+
+  function total() {
+  yen = 0;
+  for (i=0; i< document.A_Form.length-1; i++) {
+  if (document.A_Form.elements[i].checked) {
+  yen += eval(document.A_Form.elements[i].value);
+  }
+  }
+  document.A_Form._total.value = yen;
+  }
+  </script>
+
+
+<script type="text/javascript" language="javascript">
+    function onRadioButtonChange() {
+      check1 = document.form1.Radio1.checked;
+      check2 = document.form1.Radio2.checked;
+      check3 = document.form1.Radio3.checked;
+
+      target = document.getElementById("output");
+
+      if (check1 == true) {
+        target.innerHTML = " <br>Total Budget: $20 <br/>";
+      }
+      else if (check2 == true) {
+        target.innerHTML = "<br>Total Budget: $26　<br/>";
+      }
+      else if (check3 == true) {
+        target.innerHTML = "<br>Total Budget: $30　<br/>";
+      }
+    }
+  </script>
+</head>
+
+<body>
+    <image src="images/mandarin8.jpg" class="mandarin3">
+  <div class="contents">
+     <div class="flexbox">
+
+           <h3>My Itinery</h3>
+  <section id="badget">
+    <div class="contents">
+       <div class="flexbox">
+           <div class="box1">
+
+
+
+
+
+<form name="form1" action="">
+
+</form>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class=itenarybadget>
+  <p class="budgetp">Transportation Fee</p>
+
+  <form name="A_Form">
+    <input id="Radio1" name="RadioGroup1" type="radio" value="20" onclick="total()"><label for="Radio1">1day ($20)</label><br/>
+    <input id="Radio2" name="RadioGroup1" type="radio" value="26" onclick="total()" /><label for="Radio2">2day ($26)</label><br />
+    <input id="Radio3" name="RadioGroup1" type="radio" value="30" onclick="total()" /><label for="Radio3">3day ($30)</label><br />
+    <div class=itenarybadget>
+      <p class="budgetp">Saved Itinerary</p>
+<input type="checkbox" name="商品Ａ" value="10" onclick="total()"><a href="index7.html" > Little India（<font color="black">$10</font>）</a><br>
+<input type="checkbox" name="商品Ｂ" value="13" onclick="total()"><a href="chinatown.html" > Chinatown（<font color="black">$13</font>）</a><br>
+<input type="checkbox" name="商品H" value="13" onclick="total()"><a href="index18.html" >Tree Top Walk（<font color="black">$13</font>）</a><br>
+<input type="checkbox" name="商品Q" value="10" onclick="total()"><a href="index17.html" >SONG FA Bak Kut Teh（<font color="black">$10</font>）</a><br>
+<input type="checkbox" name="商品R" value="10" onclick="total()"><a href="redhouse.html" >Red House（<font color="black">$10</font>）</a><br>
+<input type="checkbox" name="商品S" value="10" onclick="total()"><a href="index10.html" >Bar on 5（<font color="black">$10</font>）</a><br>
+
+<input type="checkbox" name="商品X" value="10" onclick="total()"><a href="celavi.html" >Ce La Vi（<font color="black">$10</font>）</a><br>
+</div>
+<p class="total">Total Budget：$<input type="text" name="_total" size="10"><input type="reset" value="clear"></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
