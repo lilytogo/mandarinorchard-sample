@@ -1,4 +1,8 @@
 /* 大枠ボックス */
+a{
+  text-decoration: none;
+  color: black;
+}
 .mymy{
   float:right;
 }

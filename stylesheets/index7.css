@@ -1,7 +1,17 @@
+.middle{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 a{
   text-decoration: none;
   color: black;
 }
+.mymy{
+  float:right;
+}
+
 .drawer_menu a {
 	color: inherit;
 	text-decoration: none;
@@ -321,120 +331,11 @@ a{
 	/* ドロワーメニュー内タイトルライン背景色 */
 	color: #fff;
 }
-
-/* フォローボタン */
-
-
-
-
-
-.mymy{
-  float:right;
-}
-.mymy2{
-margin-right: 10px;
-}
-
-h3 {
-     position: relative;
-     padding-bottom: 0.5em;
-     border-bottom: 4px solid #DDD;
-     font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiry
-}
-
-h3::after {
-     position: absolute;
-     content: " ";
-     border-bottom: solid 4px #446689;
-     bottom: -4px;
-     width:10%;
-     display: block;
-}
-
-
-.total {
-     position: relative;
-     padding-bottom: 0.5em;
-}
-
-.total::after {
-     position: absolute;
-     content: '';
-     left: 0;
-     bottom: 0;
-     width: 100%;
-     height: 7px;
-     box-sizing: border-box;
-
-     border-bottom: 1px solid black;
-}
-
-.budgetp {
-
-     position: relative;
-     padding-left: 0.7em;
-}
-
-.budgetp::after {
-  text-align: center;
-     position: absolute;
-     top: 50%;
-     left:0;
-     transform:translateY(-50%);
-     content: '';
-     width: 5px;
-     height:1em;
-     background-color: #446689;
-}
-
-.transportation{
-  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
-   display: inline-block;
-}
-.itenarybadget{
-  font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
-   display: inline-block;
-}
-
-.search-area input[type="text"] {
-  padding: 5px 5px 3px;
-  font-size: 16px;
-  border: 1px solid #D6D6D6;
-}
-
-.search-area input[type="text"]:focus {
-  background: #F9F9F9;
-}
-
-.search-result {
-  margin-top: 20px;
-}
-.search-result__hit-num span {
-  font-weight: bold;
-}
-#search-result__list {
-  margin-top: 15px;
-}
-#search-result__list span {
-  display: inline-block;
-  margin-right: 15px;
-  padding: 5px;
-  background: #F2F2F2;
-}
-.target-area {
-  margin-top: 50px;
-}
-
 .mandarin3{
 
   width: 55%;
  object-fit: cover;
 }
-.note{
-  width: 40px;
-
-}
-
 
 #myInput {
    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -469,6 +370,69 @@ h3::after {
    background-color: #eee; /* Add a hover effect to all links, except for headers */
  }
 
+nav ul{
+display: table;
+margin: 0 auto;
+padding: 0 ;
+width: 80%;
+text-align: center;
+}
+nav li{
+display: table-cell;
+min-width: 50px;
+}
+nav a{
+display: block;
+width: 100%;
+text-decoration: none;
+color: #555;
+padding-bottom: 5px;
+}
+nav li.current{
+border-bottom: 3px solid #92D050;
+}
+nav li:hover{
+color: #E7DA66;
+border-bottom: 3px solid #F0E475;
+}
+dl.search{
+    position:relative;
+    background-color:#fff;
+    border:1px solid #aaa;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -o-border-radius:6px;
+    -ms-border-radius:6px;
+    border-radius:6px;
+}
+dl.search dt{
+    margin-right:40px;
+    padding:8px 0 8px 8px;
+}
+dl.search dt input{
+    width:100%;
+    height:24px;
+    line-height:24px;
+    background:none;
+    border:none;
+}
+dl.search dd{
+    position:absolute;
+    top:0;
+    right:0;
+}
+dl.search dd button{
+    display:block;
+    padding:10px;
+    background:none;
+    border:none;
+}
+dl.search dd button span{
+    display:block;
+    width:20px;
+    height:20px;
+    background:url("images/search.png") no-repeat scroll 0 0;
+}
 
 .contents {
      width: 100%;
@@ -494,11 +458,6 @@ h3::after {
 
   border: solid 3px #black;
  }
- .location{
-    font-weight:bold;
-    text-align: center;
- }
-
  p{
    font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
  }
@@ -511,7 +470,13 @@ h3::after {
    text-align: center;
    font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
  }
+.send{
+ color: black;
+  text-decoration: underline;
+  text-align: center;
+}
  .btn-border-bottom {
+   text-align: center;
   position: relative;
   display: inline-block;
   font-weight: normal;
@@ -554,7 +519,7 @@ margin-left: 140px;
    color: #000000;
    text-decoration: none;
    font-weight: normal;
-   padding: 8px 16px;
+   padding: 3px 8px 5px 10px;
    border-radius: 4px;
    transition: .4s;
  }
@@ -576,6 +541,7 @@ margin-left: 140px;
          width: 100%;
          margin: 0 auto;
      }
+
  }
  @media screen and (min-width: 601px) {
      .flexbox {
