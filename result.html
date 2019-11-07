@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -7,9 +7,8 @@
   <title></title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="./javascripts/index7.js"></script>
+  <script type="text/javascript" src="./javascripts/index5.js"></script>
   <link rel="stylesheet" href="./stylesheets/index77.css">
-
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>
   　//URLのパラメーターを取得
@@ -19,8 +18,9 @@
   　//検索したい全てのURLを配列に格納
     const urlLists = [
       "index5.html",
+      "index7.html",
       "chinatown.html",
-      ];
+      "peranakan.html"];
     $.each(urlLists, function(i){
       $.ajax({
         url　: urlLists[i],
@@ -38,13 +38,15 @@
         });
       });
   </script>
+
 </head>
 <body>
 
-  <form action="result.html">
-  <input id="search-input" placeholder="1つキーワードを入力" type="text" name="search-key">
-  <input id="search-buttom" class="fas" type="submit" value="" method="get">
-</form>
+  <div class="contents">
+  <h1>検索結果</h1>
+  <ul id="ul">
+  </ul>
+</div>
 
 </body>
 </html>
