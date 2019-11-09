@@ -1,3 +1,25 @@
+.itenarybadget{
+  display: inline-block;
+}
+.flexbox {
+    display: flex;
+}
+.box1 {
+    width: 55%;
+    margin: auto;
+}
+.box2 {
+    width: 45%;
+    margin: auto .5rem;
+
+ border: solid 3px #black;
+}
+.mi{
+  font-size: 10px;
+}
+.note{
+  float:right;
+}
 .send{
   text-align: center;
 }
@@ -10,7 +32,7 @@ a{
 
   text-decoration: none;
   color: #555;
-
+  padding-bottom: 5px;
 }
 .search-area input[type="text"] {
 
@@ -45,7 +67,7 @@ a{
   margin-top: 50px;
 }
 .target-area {
-
+display: none;
   margin-top: 50px;
 }
 

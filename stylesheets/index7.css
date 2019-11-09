@@ -1,3 +1,19 @@
+.center{
+  max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.introduce{
+  display: inline-block;
+    text-align: left;
+}
+.note{
+  float: right;
+}
+.mi{
+  font-size: 10px;
+  color: black;
+}
 .location{
   text-align: center;
 }
@@ -519,13 +535,13 @@ dl.search dd button span{
    display: inline-block;
    max-width: 250px;
 margin-left: 140px;
-   border: 1px solid #000000;
+   border: 0.5px solid #000000;
    font-size: 16px;
    color: #000000;
    text-decoration: none;
    font-weight: normal;
    padding: 3px 8px 5px 10px;
-   border-radius: 4px;
+   border-radius: 0.5px;
    transition: .4s;
  }
 
