@@ -1,3 +1,22 @@
+nav ul{
+display: table;
+margin: 0 auto;
+padding: 0 ;
+
+
+}
+nav li{
+display: table-cell;
+
+}
+nav a{
+
+
+text-decoration: none;
+color: #555;
+padding-bottom: 5px;
+}
+
 .itenarybadget{
   display: inline-block;
 }
@@ -22,7 +41,7 @@
 }
 .send{
   text-align: center;
-  
+
 }
 .glass{
 margin-left: 10px;
